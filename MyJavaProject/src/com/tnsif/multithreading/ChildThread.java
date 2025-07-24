@@ -1,4 +1,6 @@
-public class com.tnsif.multithreading extends Thread {
+package com.tnsif.multithreading;
+
+public class ChildThread extends Thread {
 	private int n;
 	private String msg;
 
@@ -8,7 +10,6 @@ public class com.tnsif.multithreading extends Thread {
 		this.msg = msg;
 	}
 
-	@Override
 	public void run() {
 		for (int i = 1; i <= n; i++) {
 			try {
